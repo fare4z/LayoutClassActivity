@@ -1,6 +1,6 @@
 # LayoutClassActivity
 
-![alt text for screen readers](Screenshot_20240229_210001.png "Apps Interface").
+<img src="Screenshot_20240229_210001.png" alt="alt text for screen readers" title="Apps Interface" style="width:50%;">
 
 This repository serves as a continuation of the lab activity for DDT 5B and DDT5C on 29/2/2024, providing an example for students to understand Android layout using Java language. It covers various layout types including Linear Layout, Frame Layout, Grid Layout, Table Layout, and Constraint Layout.
 
