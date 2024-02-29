@@ -9,27 +9,57 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnNext;
+    Button btnLinear, btnFrame, btnGrid, btnTable, btnConstraint;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnNext = findViewById(R.id.btnNext);
+        btnLinear = findViewById(R.id.btnLinear);
+        btnFrame = findViewById(R.id.btnFrame);
+        btnGrid = findViewById(R.id.btnGrid);
+        btnTable = findViewById(R.id.btnTable);
+        btnConstraint = findViewById(R.id.btnConstraint);
 
-        btnNext.setOnClickListener(new View.OnClickListener() {
+        btnLinear.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(), LinearActivity.class);
                 startActivity(i);
             }
         });
 
+        btnFrame.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), FrameLayoutActivity.class);
+                startActivity(i);
+            }
+        });
 
+        btnGrid.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), GridLayoutActivity.class);
+                startActivity(i);
+            }
+        });
 
+        btnConstraint.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), ConstraintActivity.class);
+                startActivity(i);
+            }
+        });
 
-
-
+        btnTable.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), TablelayoutActivity.class);
+                startActivity(i);
+            }
+        });
     }
 }
